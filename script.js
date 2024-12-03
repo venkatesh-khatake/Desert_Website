@@ -3,55 +3,55 @@ const Desert_List = [
         "category" : "Baklava",
         "name" : "Pistachio Baklava",
         "price" : 4.50,
-        "image" : "images/image-baklava-desktop.jpg"
+        "image" : "image-baklava-desktop.jpg"
     },
     {
         "category" : "Brownie",
         "name" : "Salted Caramel Brownie",
         "price" : 5.50,
-        "image" : "images/image-brownie-desktop.jpg"
+        "image" : "image-brownie-desktop.jpg"
     },
     {
         "category" : "Cake",
         "name" : "Red Velvet Cake",
         "price" : 5.50,
-        "image" : "images/image-cake-desktop.jpg"
+        "image" : "image-cake-desktop.jpg"
     },
     {
         "category" : "Creme Brulee",
         "name" : "Vanilla Bean Creme Brulee",
         "price" : 7.5,
-        "image" : "images/image-creme-brulee-desktop.jpg"
+        "image" : "image-creme-brulee-desktop.jpg"
     },
     {
         "category" : "Macaron",
         "name" : "Macaron Mix of Five",
         "price" : 8.5,
-        "image" : "images/image-macaron-desktop.jpg"
+        "image" : "image-macaron-desktop.jpg"
     },
     {
         "category" : "Pie",
         "name" : "Lemon Meringue Pie",
         "price" : 5.70,
-        "image" : "images/image-meringue-desktop.jpg"
+        "image" : "image-meringue-desktop.jpg"
     },
     {
         "category" : "Panna Cotta",
         "name" : "Vanilla Panna Cotta",
         "price" : 6.50,
-        "image" : "images/image-panna-cotta-desktop.jpg"
+        "image" : "image-panna-cotta-desktop.jpg"
     },
     {
         "category" : "Tiramisu",
         "name" : "Classic Tiramisu",
         "price" : 5.50,
-        "image" : "images/image-tiramisu-desktop.jpg"
+        "image" : "image-tiramisu-desktop.jpg"
     },
     {
         "category" : "waffle",
         "name" : "Waffle with Berries",
         "price" : 7.50,
-        "image" : "images/image-waffle-desktop.jpg"
+        "image" : "image-waffle-desktop.jpg"
     }
 ];
 
