@@ -3,11 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    width: 100%;
-    height: 100vh;
-    background-color: #34495e;
-}
+
+
 #card-box{
     /* background-color: aquamarine; */
     display: flex;
@@ -74,17 +71,43 @@ button:hover{
     font-size: 15px;
 }
 .details h6{
-    color: rgb(145, 98, 10);
+    color: #e74c3c;
     font-size: 14px;
 }
 
-
-#cart-box{
-    /* height: 100vh; */
-    /* background-color: aqua; */
-}
 .cart-details{
     width: 350px;
-    height: 250px;
-    background-color: blanchedalmond;
+    height: auto;
+    background-color: rgb(243, 243, 243);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.cart-details h2{
+    font-size: 22px;
+    font-weight: 700;
+    color: #e74c3c;
+}
+
+.cart-items{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.items h5{
+    font-size: 15px;
+}
+.items h6{
+    font-size: 13px;
+}
+.cart-items i{
+    border: 1px solid black;
+    padding: 5px 8px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+hr{
+    color: black;
 }
