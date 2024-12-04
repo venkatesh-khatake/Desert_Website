@@ -83,32 +83,42 @@ postMethods();
 
 // ========================================================
 
-document.querySelector("#card-box").addEventListener("click",(e) =>{
-    if(e.target.classList.contains("add-to-cart")){
-        const card = e.target.closest(".cards");
+    let totalAmount = 0;
 
-        const name = card.querySelector("h4").textContent;
-        const price = card.querySelector("h6").textContent;
+    document.querySelector("#card-box").addEventListener("click", (e) => {
+        if (e.target.classList.contains("add-to-cart")) {
+            const card = e.target.closest(".cards");
+    
+            const name = card.querySelector("h4").textContent;
+            const price = parseFloat(card.querySelector("h6").textContent.replace('$', '').trim());
+    
+            const cartItem = document.createElement("div");
+            cartItem.classList.add("cart-items");
+            cartItem.innerHTML = `
+                <div class="items">
+                    <h5>${name}</h5>
+                    <h6>$${price.toFixed(2)}</h6>
+                </div>
+                 <i class="fa-solid fa-xmark remove-item"></i>
 
-        const cartItem = document.createElement("div");
-        cartItem.classList.add("cart-items");
-        cartItem.innerHTML = `
-            <div class = "items">
-                <h5>${name}</h5>
-                <h6>${price}</h6>
-            </div>
-            <i class="fa-solid fa-xmark remove-item"></i>
-        `;
-        document.querySelector(".cart-details").appendChild(cartItem);
-    }
-});
-
-document.querySelector(".cart-details").addEventListener("click", (e) => {
-        if (e.target.classList.contains("remove-item")) {
-            e.target.closest(".cart-items").remove();
+            `;
+    
+            document.querySelector(".cart-details").appendChild(cartItem);
+    
+            totalAmount += price;
+            document.getElementById("total-amount").textContent = totalAmount.toFixed(2);
         }
-     });
-
-    //  ==========================================================
-
+    });
+    
+    document.querySelector(".cart-details").addEventListener("click", (e) => {
+        if (e.target.classList.contains("remove-item")) {
+            const price = parseFloat(e.target.closest(".cart-items").querySelector("h6").textContent.replace('$', '').trim());
+            
+            e.target.closest(".cart-items").remove();
+    
+            totalAmount -= price;
+            document.getElementById("total-amount").textContent = totalAmount.toFixed(2);
+        }
+    });
+    
 
