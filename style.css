@@ -121,3 +121,36 @@ button:hover{
 hr{
     color: black;
 }
+.cart-details h3{
+    display: none;
+    visibility: hidden;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    .cart-details, .cart-details * {
+        visibility: visible;
+    }
+    .cart-details {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .cart-details h2{
+        visibility: hidden;
+
+    }
+    .cart-details button{
+        visibility: hidden;
+    }
+    .cart-items i{
+        visibility: hidden;
+    }
+    .cart-details h3{
+        display: block;
+        visibility: visible;
+    }
+
+}
