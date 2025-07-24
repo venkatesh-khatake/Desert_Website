@@ -3,13 +3,13 @@
 A vibrant and user-friendly website for browsing and ordering desserts online. Built with **HTML**, **CSS**, and **JavaScript**, featuring an interactive cart and bill summary.
 
 ---
-<img src = ""/>
+<img src = "Screenshot 2024-12-10 150108.png"/>
 
 
 ## 🔗 Live Demo
 
 Check it out here:  
-https://venkatesh‑khatake.github.io/Desert_Website/
+venkatesh‑khatake.github.io/Desert_Website/
 
 ---
 
