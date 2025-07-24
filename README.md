@@ -9,7 +9,7 @@ A vibrant and user-friendly website for browsing and ordering desserts online. B
 ## 🔗 Live Demo
 
 Check it out here:  
-<a href = "venkatesh‑khatake.github.io/Desert_Website/">Live Preview</a>
+<a href = "https://venkatesh-khatake.github.io/Desert_Website/">Live Preview</a>
 
 ---
 
