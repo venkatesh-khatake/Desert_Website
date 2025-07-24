@@ -23,6 +23,4 @@ Check it out here:
 
 ---
 
-## 📁 Project Structure
-
 
